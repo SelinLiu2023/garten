@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 30px;
+    /* position: absolute; */
+    display: grid;
+    grid-template-rows: 200px 100px 1fr 30px;
+    background-color: #D9D9D9;
+}
+.fa-brands{
+    display: block;
+}
+header{
+    height: 200px;
+    background-color: #035928;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+header h1{
+    display: block;
+    font-family: "Pacifico", cursive;
+    word-spacing: 50px;
+}
+header p{
+    display: block;
+    padding: 10px;
+}
+nav{
+    height: 100px;
+    background-color: #CEF2D7;
+    display: flex;
+    align-items: center;
+}
+nav ul{
+    padding: 0 30px;
+}
+ul li{
+    display: inline-block;
+    padding: 10px;
+    margin: 0 20px;
+    /* background-color:#F2F2F2;
+    border-radius: 10px; */
+}
+ul li a{
+    text-decoration: underline burlywood 6px;
+    color: #333;
+}
+/* .wrapper{
+    min-height: 100%;
+    height: 100%;
+    margin-bottom: -100px;
+} */
+.gartenPhotoBox{
+    width: 70%;
+    /* height: 90%; */
+    margin: 50px auto;
+    background-color: #686868;
+
+}
+.gartenPhotoBox{
+    width: 70%;
+    height: 80%;
+    margin: 50px auto;
+    /* background-color: #686868;
+    background-image: linear-gradient(rgba(255, 255, 255,0.4),rgba(255, 255, 255,0.4)),url(./images/garten.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; */
+    display: grid;
+    grid-template-columns: repeat(30,1fr);
+    grid-template-rows: repeat(20,1fr);
+
+}
+.mapMark{
+    width: 50px;
+    height: 50px;
+    background-color: white;
+    position: relative;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+.mapMark::after{
+    content: "";
+    position: absolute;
+    /* box-sizing: content-box; */
+    /* width: 0;
+    height: 0; */
+    left: 20px;
+    top: 50px;
+    border-top: 5px solid white;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+}
+.mapMark a{
+    color: #0294a4;
+}
+.gewechsHaus a{
+    color: #0DB0FF;
+}
+.hexenHaus a{
+    color:#D9B68B;
+}
+.hexenHaus a:hover{
+    color:white;
+}
+.mapMark:hover{
+    background-color: burlywood;
+}
+.mapMark:hover::after{
+    border-top: 5px solid burlywood;
+}
+.gartenPhotoBox img{
+    display: block;
+    width: 100%;
+    height: 100%;
+  grid-column: 1/31;
+  grid-row: 1/21;
+  z-index: 0;
+}
+.erdbFeld{
+    grid-column: 23;
+    grid-row: 16;
+}
+.vegeFeld1{
+    grid-column: 20;
+    grid-row: 15;
+}
+.vegeFeld2{
+    grid-column: 16;
+    grid-row: 15;
+}
+.lauchFeld{
+    grid-column: 8;
+    grid-row: 9;
+}
+.himbFeld{
+    grid-column: 5;
+    grid-row: 6;
+}
+.gewechsHaus{
+    grid-column: 14;
+    grid-row: 14;
+}
+.hexenHaus{
+    grid-column: 10;
+    grid-row: 10;
+}
+footer{
+    width: 100%;
+    height: 30px;
+    font-size: medium;
+    color:#686868;
+    background-color: #ebeceb;
+    /* position: absolute;
+    bottom: 0; */
+    text-align: center;
+}
